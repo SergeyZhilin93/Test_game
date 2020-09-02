@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Быки и Коровы</h1>
+  </header>
+  <div class="container">
+    <div class="combination">
+      <p class="combination-title">Введите четырхзначное число</p>
+      <form id="form">
+        <input type="tel" maxlength="4" minlength="4" name="num" placeholder="Введите число" required>
+        <button type="submit">Отправить</button>
+        <p class="err"></p>
+      </form>
+      <div class="results"></div>
+    </div>
+    <div class="help">
+      <button onclick="showNum()">Показать загаданное число</button>
+      <p class="show-num"></p>
+    </div>
+    <div class="new-game">
+      <button onclick="newGame()">Новая игра</button>
+    </div>
+    <div class="rules">
+      <button onclick="rulesShow('rules_id')">Правила игры</button>
+      <p id='rules_id' class="show-rules">
+        Цель игры угадать тайное 4-значное число с неповторяющимися цифрами. Игрок, вводит комбинацию что бы отгдать число. Комбинация — это 4-значное число с неповторяющимися цифрами (комюинация не может начинаться с цифры 0), сообщаемое компьютеру. Компьютер сообщает в ответ, сколько цифр угадано без совпадения с их позициями в тайном числе (то есть количество коров) и сколько угадано вплоть до позиции в тайном числе (то есть количество быков). Например:
+        <br/>
+        <br/>
+        Задумано тайное число «3219».
+        Попытка: «2310».
+        <br/>
+        <br/>
+        Результат: две «коровы» (две цифры: «2» и «3» — угаданы на неверных позициях) и один «бык» (одна цифра «1» угадана вплоть до позиции).
+        <br/>
+        <br/>
+        Игроки могут играть по очереди, побеждает тот кто отгадал число за меньшее колличество ходов.
+      </p>
+    </div>
+  </div>
+</body>
+<script src="./js/scripts.js"></script>
+
+</html>

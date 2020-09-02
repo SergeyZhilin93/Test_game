@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+}
+.combination {
+  padding: 1.5rem;
+}
+.combination-title {
+  margin-top: 0;
+}
+.err {
+  color: red;
+}
+.help {
+  padding: 1.5rem;
+}
+.new-game {
+  padding: 1.5rem;
+}
+.rules {
+  padding: 1.5rem;
+  width: 34rem;
+}
+.show-rules {
+  display: none;
+}
